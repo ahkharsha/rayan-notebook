@@ -1,0 +1,85 @@
+{
+  "scenario": "LODO1",
+  "model": "XGBoost",
+  "source_domains": [
+    "elliptic",
+    "dgraphfin"
+  ],
+  "target_domain": "ieee",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.6338119506835938,
+      "PR-AUC": 0.5883782562092578,
+      "Precision": 0.6017964071856288,
+      "Recall": 0.78515625,
+      "F1": 0.6813559322033899,
+      "selected_threshold": 0.3128430247306824,
+      "ECE": 0.1338798349024728,
+      "Brier": 0.2560195326805115,
+      "TP": 201,
+      "TN": 123,
+      "FP": 133,
+      "FN": 55
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.6338119506835938,
+      "std": 0.0
+    },
+    "PR-AUC": {
+      "mean": 0.5883782562092578,
+      "std": 0.0
+    },
+    "Precision": {
+      "mean": 0.6017964071856288,
+      "std": 0.0
+    },
+    "Recall": {
+      "mean": 0.78515625,
+      "std": 0.0
+    },
+    "F1": {
+      "mean": 0.6813559322033899,
+      "std": 0.0
+    },
+    "selected_threshold": {
+      "mean": 0.3128430247306824,
+      "std": 0.0
+    },
+    "ECE": {
+      "mean": 0.1338798349024728,
+      "std": 0.0
+    },
+    "Brier": {
+      "mean": 0.2560195326805115,
+      "std": 0.0
+    },
+    "TP": {
+      "mean": 201.0,
+      "std": 0.0
+    },
+    "TN": {
+      "mean": 123.0,
+      "std": 0.0
+    },
+    "FP": {
+      "mean": 133.0,
+      "std": 0.0
+    },
+    "FN": {
+      "mean": 55.0,
+      "std": 0.0
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\artifacts_runs\\validation\\SMOKE_TEST\\validation-smoke-20260830\\predictions\\LODO1_XGBoost_seed42.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "SMOKE_TEST"
+}

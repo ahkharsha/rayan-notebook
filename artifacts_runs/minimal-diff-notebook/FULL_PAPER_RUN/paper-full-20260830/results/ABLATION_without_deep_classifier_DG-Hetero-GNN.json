@@ -1,0 +1,146 @@
+{
+  "scenario": "ABLATION_without_deep_classifier",
+  "model": "DG-Hetero-GNN",
+  "source_domains": [
+    "elliptic",
+    "ieee",
+    "dgraphfin"
+  ],
+  "target_domain": "amlsim",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.428,
+      "PR-AUC": 0.533385183606276,
+      "Precision": 0.5,
+      "Recall": 0.24,
+      "F1": 0.32432432432432434,
+      "selected_threshold": 0.18231433629989624,
+      "ECE": 0.42860512269867795,
+      "Brier": 0.43207651376724243,
+      "TP": 6,
+      "TN": 14,
+      "FP": 6,
+      "FN": 19
+    },
+    {
+      "ROC-AUC": 0.36200000000000004,
+      "PR-AUC": 0.5080264807555214,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "selected_threshold": 0.2049458622932434,
+      "ECE": 0.44594122138288284,
+      "Brier": 0.4522431790828705,
+      "TP": 0,
+      "TN": 20,
+      "FP": 0,
+      "FN": 25
+    },
+    {
+      "ROC-AUC": 0.6859999999999999,
+      "PR-AUC": 0.7354863031915008,
+      "Precision": 0.5681818181818182,
+      "Recall": 1.0,
+      "F1": 0.7246376811594203,
+      "selected_threshold": 0.010820566676557064,
+      "ECE": 0.508117002579901,
+      "Brier": 0.49525749683380127,
+      "TP": 25,
+      "TN": 1,
+      "FP": 19,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.28400000000000003,
+      "PR-AUC": 0.4713734144982883,
+      "Precision": 0.5,
+      "Recall": 0.16,
+      "F1": 0.24242424242424243,
+      "selected_threshold": 0.1286722719669342,
+      "ECE": 0.5050630152225495,
+      "Brier": 0.5180515646934509,
+      "TP": 4,
+      "TN": 16,
+      "FP": 4,
+      "FN": 21
+    },
+    {
+      "ROC-AUC": 0.6060000000000001,
+      "PR-AUC": 0.627561771505489,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "selected_threshold": 0.1470097005367279,
+      "ECE": 0.552971580117527,
+      "Brier": 0.5525286197662354,
+      "TP": 0,
+      "TN": 20,
+      "FP": 0,
+      "FN": 25
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.4732,
+      "std": 0.1504159566003554
+    },
+    "PR-AUC": {
+      "mean": 0.575166630711415,
+      "std": 0.09536683800264859
+    },
+    "Precision": {
+      "mean": 0.31363636363636366,
+      "std": 0.2572903945106347
+    },
+    "Recall": {
+      "mean": 0.27999999999999997,
+      "std": 0.37180640123591197
+    },
+    "F1": {
+      "mean": 0.25827724958159737,
+      "std": 0.2666532810082506
+    },
+    "selected_threshold": {
+      "mean": 0.13475254755467175,
+      "std": 0.06743228991730192
+    },
+    "ECE": {
+      "mean": 0.48813958840030763,
+      "std": 0.04519677286720413
+    },
+    "Brier": {
+      "mean": 0.4900314748287201,
+      "std": 0.043600602460010025
+    },
+    "TP": {
+      "mean": 7.0,
+      "std": 9.2951600308978
+    },
+    "TN": {
+      "mean": 14.2,
+      "std": 6.997142273814361
+    },
+    "FP": {
+      "mean": 5.8,
+      "std": 6.997142273814361
+    },
+    "FN": {
+      "mean": 18.0,
+      "std": 9.2951600308978
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\ABLATION_without_deep_classifier_DG-Hetero-GNN_seed42.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\ABLATION_without_deep_classifier_DG-Hetero-GNN_seed123.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\ABLATION_without_deep_classifier_DG-Hetero-GNN_seed3407.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\ABLATION_without_deep_classifier_DG-Hetero-GNN_seed2025.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\ABLATION_without_deep_classifier_DG-Hetero-GNN_seed9999.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "FULL_PAPER_RUN"
+}

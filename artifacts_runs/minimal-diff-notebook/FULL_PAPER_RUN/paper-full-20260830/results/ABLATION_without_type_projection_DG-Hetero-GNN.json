@@ -1,0 +1,146 @@
+{
+  "scenario": "ABLATION_without_type_projection",
+  "model": "DG-Hetero-GNN",
+  "source_domains": [
+    "elliptic",
+    "ieee",
+    "dgraphfin"
+  ],
+  "target_domain": "amlsim",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.678,
+      "PR-AUC": 0.6951111642166297,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.0001307643105974421,
+      "ECE": 0.5535821470483724,
+      "Brier": 0.5531661510467529,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.726,
+      "PR-AUC": 0.8188176905797044,
+      "Precision": 0.6206896551724138,
+      "Recall": 0.72,
+      "F1": 0.6666666666666666,
+      "selected_threshold": 0.02502783015370369,
+      "ECE": 0.5236187275085185,
+      "Brier": 0.5163194537162781,
+      "TP": 18,
+      "TN": 9,
+      "FP": 11,
+      "FN": 7
+    },
+    {
+      "ROC-AUC": 0.424,
+      "PR-AUC": 0.5134754235236313,
+      "Precision": 0.3333333333333333,
+      "Recall": 0.08,
+      "F1": 0.12903225806451613,
+      "selected_threshold": 0.17850980162620544,
+      "ECE": 0.40976338833570486,
+      "Brier": 0.41528841853141785,
+      "TP": 2,
+      "TN": 16,
+      "FP": 4,
+      "FN": 23
+    },
+    {
+      "ROC-AUC": 0.386,
+      "PR-AUC": 0.48016445406164393,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "selected_threshold": 0.04016375169157982,
+      "ECE": 0.5359934489760134,
+      "Brier": 0.5365349054336548,
+      "TP": 0,
+      "TN": 20,
+      "FP": 0,
+      "FN": 25
+    },
+    {
+      "ROC-AUC": 0.278,
+      "PR-AUC": 0.4790537945095831,
+      "Precision": 0.4,
+      "Recall": 0.32,
+      "F1": 0.35555555555555557,
+      "selected_threshold": 0.03936926648020744,
+      "ECE": 0.5124862925873862,
+      "Brier": 0.5194507837295532,
+      "TP": 8,
+      "TN": 8,
+      "FP": 12,
+      "FN": 17
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.4984,
+      "std": 0.17366818937272308
+    },
+    "PR-AUC": {
+      "mean": 0.5973245053782386,
+      "std": 0.1366503340202369
+    },
+    "Precision": {
+      "mean": 0.38191570881226056,
+      "std": 0.21712240385089057
+    },
+    "Recall": {
+      "mean": 0.42400000000000004,
+      "std": 0.38165953414005005
+    },
+    "F1": {
+      "mean": 0.3731080389144905,
+      "std": 0.2834323761575802
+    },
+    "selected_threshold": {
+      "mean": 0.05664028285245877,
+      "std": 0.06263324443653638
+    },
+    "ECE": {
+      "mean": 0.5070888008911991,
+      "std": 0.05054051293265478
+    },
+    "Brier": {
+      "mean": 0.5081519424915314,
+      "std": 0.048269820162179795
+    },
+    "TP": {
+      "mean": 10.6,
+      "std": 9.54148835350125
+    },
+    "TN": {
+      "mean": 10.6,
+      "std": 6.916646586316233
+    },
+    "FP": {
+      "mean": 9.4,
+      "std": 6.916646586316233
+    },
+    "FN": {
+      "mean": 14.4,
+      "std": 9.54148835350125
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\ABLATION_without_type_projection_DG-Hetero-GNN_seed42.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\ABLATION_without_type_projection_DG-Hetero-GNN_seed123.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\ABLATION_without_type_projection_DG-Hetero-GNN_seed3407.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\ABLATION_without_type_projection_DG-Hetero-GNN_seed2025.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\ABLATION_without_type_projection_DG-Hetero-GNN_seed9999.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "FULL_PAPER_RUN"
+}

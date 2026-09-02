@@ -1,0 +1,145 @@
+{
+  "scenario": "LODO0",
+  "model": "GraphSAGE",
+  "source_domains": [
+    "ieee",
+    "dgraphfin"
+  ],
+  "target_domain": "elliptic",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.5938975194075727,
+      "PR-AUC": 0.10903841563549452,
+      "Precision": 0.046312949640287766,
+      "Recall": 0.022662266226622662,
+      "F1": 0.030432855665534053,
+      "selected_threshold": 0.14696604013442993,
+      "ECE": 0.08836525903328916,
+      "Brier": 0.09659639745950699,
+      "TP": 103,
+      "TN": 39898,
+      "FP": 2121,
+      "FN": 4442
+    },
+    {
+      "ROC-AUC": 0.6456586340230442,
+      "PR-AUC": 0.1261095879977228,
+      "Precision": 0.10602910602910603,
+      "Recall": 0.11221122112211221,
+      "F1": 0.10903260288615714,
+      "selected_threshold": 0.16601109504699707,
+      "ECE": 0.07090063347961933,
+      "Brier": 0.09342950582504272,
+      "TP": 510,
+      "TN": 37719,
+      "FP": 4300,
+      "FN": 4035
+    },
+    {
+      "ROC-AUC": 0.6577069370708222,
+      "PR-AUC": 0.13625281004066112,
+      "Precision": 0.14460119370591426,
+      "Recall": 0.11727172717271728,
+      "F1": 0.1295103875592273,
+      "selected_threshold": 0.1592337042093277,
+      "ECE": 0.06456079149056158,
+      "Brier": 0.09201681613922119,
+      "TP": 533,
+      "TN": 38866,
+      "FP": 3153,
+      "FN": 4012
+    },
+    {
+      "ROC-AUC": 0.634844321434452,
+      "PR-AUC": 0.1204897117978582,
+      "Precision": 0.056622193296452974,
+      "Recall": 0.03828382838283828,
+      "F1": 0.04568128117616172,
+      "selected_threshold": 0.14771440625190735,
+      "ECE": 0.08061361070349125,
+      "Brier": 0.09408926963806152,
+      "TP": 174,
+      "TN": 39120,
+      "FP": 2899,
+      "FN": 4371
+    },
+    {
+      "ROC-AUC": 0.6259090320369766,
+      "PR-AUC": 0.11880262391756477,
+      "Precision": 0.09209467074545162,
+      "Recall": 0.12585258525852586,
+      "F1": 0.10635924135366308,
+      "selected_threshold": 0.2307683825492859,
+      "ECE": 0.06901167256554568,
+      "Brier": 0.09429021179676056,
+      "TP": 572,
+      "TN": 36380,
+      "FP": 5639,
+      "FN": 3973
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.6316032887945735,
+      "std": 0.021649974967567404
+    },
+    "PR-AUC": {
+      "mean": 0.12213862987786028,
+      "std": 0.008949213036410188
+    },
+    "Precision": {
+      "mean": 0.08913202268344253,
+      "std": 0.03538779356245889
+    },
+    "Recall": {
+      "mean": 0.08325632563256324,
+      "std": 0.04359825774738757
+    },
+    "F1": {
+      "mean": 0.08420327372814866,
+      "std": 0.03882091915543881
+    },
+    "selected_threshold": {
+      "mean": 0.17013872563838958,
+      "std": 0.03115039510893138
+    },
+    "ECE": {
+      "mean": 0.07469039345450142,
+      "std": 0.008617487322025823
+    },
+    "Brier": {
+      "mean": 0.0940844401717186,
+      "std": 0.001487030789143746
+    },
+    "TP": {
+      "mean": 378.4,
+      "std": 198.15408146187653
+    },
+    "TN": {
+      "mean": 38396.6,
+      "std": 1226.6754419975969
+    },
+    "FP": {
+      "mean": 3622.4,
+      "std": 1226.6754419975969
+    },
+    "FN": {
+      "mean": 4166.6,
+      "std": 198.1540814618765
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO0_GraphSAGE_seed42.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO0_GraphSAGE_seed123.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO0_GraphSAGE_seed3407.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO0_GraphSAGE_seed2025.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO0_GraphSAGE_seed9999.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "FULL_PAPER_RUN"
+}

@@ -1,0 +1,145 @@
+{
+  "scenario": "LODO1",
+  "model": "GCN",
+  "source_domains": [
+    "elliptic",
+    "dgraphfin"
+  ],
+  "target_domain": "ieee",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.3739447837087472,
+      "PR-AUC": 0.026986656493382874,
+      "Precision": 0.03499178676059677,
+      "Recall": 1.0,
+      "F1": 0.06761751582612452,
+      "selected_threshold": 0.21778900921344757,
+      "ECE": 0.38037748861808496,
+      "Brier": 0.1788352131843567,
+      "TP": 20663,
+      "TN": 30,
+      "FP": 569847,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.3887437084918779,
+      "PR-AUC": 0.029528938351974024,
+      "Precision": 0.03499131271189024,
+      "Recall": 1.0,
+      "F1": 0.06761663075259211,
+      "selected_threshold": 0.19632862508296967,
+      "ECE": 0.4313877824702876,
+      "Brier": 0.22044479846954346,
+      "TP": 20663,
+      "TN": 22,
+      "FP": 569855,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.4494615649203349,
+      "PR-AUC": 0.030510818962094757,
+      "Precision": 0.034992616376740907,
+      "Recall": 1.0,
+      "F1": 0.0676190647605615,
+      "selected_threshold": 0.22173330187797546,
+      "ECE": 0.3925561487898531,
+      "Brier": 0.18813355267047882,
+      "TP": 20663,
+      "TN": 44,
+      "FP": 569833,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.3546523152441441,
+      "PR-AUC": 0.025178308030457355,
+      "Precision": 0.03497319788835955,
+      "Recall": 0.9990320863378986,
+      "F1": 0.0675805963186368,
+      "selected_threshold": 0.20474189519882202,
+      "ECE": 0.3731455299642016,
+      "Brier": 0.17427681386470795,
+      "TP": 20643,
+      "TN": 268,
+      "FP": 569609,
+      "FN": 20
+    },
+    {
+      "ROC-AUC": 0.33130585482178215,
+      "PR-AUC": 0.024907426209311728,
+      "Precision": 0.03499249785774042,
+      "Recall": 1.0,
+      "F1": 0.06761884347986864,
+      "selected_threshold": 0.17058874666690826,
+      "ECE": 0.3766108666494946,
+      "Brier": 0.17750999331474304,
+      "TP": 20663,
+      "TN": 42,
+      "FP": 569835,
+      "FN": 0
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.37962164543737725,
+      "std": 0.03987715190419448
+    },
+    "PR-AUC": {
+      "mean": 0.02742242960944415,
+      "std": 0.002259502150853325
+    },
+    "Precision": {
+      "mean": 0.034988282319065575,
+      "std": 7.557238425435495e-06
+    },
+    "Recall": {
+      "mean": 0.9998064172675797,
+      "std": 0.00038716546484054423
+    },
+    "F1": {
+      "mean": 0.06761053022755671,
+      "std": 1.4993347284012124e-05
+    },
+    "selected_threshold": {
+      "mean": 0.2022363156080246,
+      "std": 0.018247005827275734
+    },
+    "ECE": {
+      "mean": 0.3908155632983844,
+      "std": 0.021317089361991615
+    },
+    "Brier": {
+      "mean": 0.187840074300766,
+      "std": 0.01694056845702352
+    },
+    "TP": {
+      "mean": 20659.0,
+      "std": 8.0
+    },
+    "TN": {
+      "mean": 81.2,
+      "std": 93.74518654309671
+    },
+    "FP": {
+      "mean": 569795.8,
+      "std": 93.74518654309671
+    },
+    "FN": {
+      "mean": 4.0,
+      "std": 8.0
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO1_GCN_seed42.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO1_GCN_seed123.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO1_GCN_seed3407.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO1_GCN_seed2025.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO1_GCN_seed9999.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "FULL_PAPER_RUN"
+}

@@ -1,0 +1,85 @@
+{
+  "scenario": "LODO1",
+  "model": "HeteroGraphSAGE",
+  "source_domains": [
+    "elliptic",
+    "dgraphfin"
+  ],
+  "target_domain": "ieee",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.599151611328125,
+      "PR-AUC": 0.582434899076851,
+      "Precision": 0.5168776371308017,
+      "Recall": 0.95703125,
+      "F1": 0.6712328767123288,
+      "selected_threshold": 0.38404130935668945,
+      "ECE": 0.09453302051406354,
+      "Brier": 0.24822206795215607,
+      "TP": 245,
+      "TN": 27,
+      "FP": 229,
+      "FN": 11
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.599151611328125,
+      "std": 0.0
+    },
+    "PR-AUC": {
+      "mean": 0.582434899076851,
+      "std": 0.0
+    },
+    "Precision": {
+      "mean": 0.5168776371308017,
+      "std": 0.0
+    },
+    "Recall": {
+      "mean": 0.95703125,
+      "std": 0.0
+    },
+    "F1": {
+      "mean": 0.6712328767123288,
+      "std": 0.0
+    },
+    "selected_threshold": {
+      "mean": 0.38404130935668945,
+      "std": 0.0
+    },
+    "ECE": {
+      "mean": 0.09453302051406354,
+      "std": 0.0
+    },
+    "Brier": {
+      "mean": 0.24822206795215607,
+      "std": 0.0
+    },
+    "TP": {
+      "mean": 245.0,
+      "std": 0.0
+    },
+    "TN": {
+      "mean": 27.0,
+      "std": 0.0
+    },
+    "FP": {
+      "mean": 229.0,
+      "std": 0.0
+    },
+    "FN": {
+      "mean": 11.0,
+      "std": 0.0
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\DG_Hetero_GNN_Review_Package\\artifacts_runs\\portable-review-package\\SMOKE_TEST\\portable-package-validation\\predictions\\LODO1_HeteroGraphSAGE_seed42.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "SMOKE_TEST"
+}

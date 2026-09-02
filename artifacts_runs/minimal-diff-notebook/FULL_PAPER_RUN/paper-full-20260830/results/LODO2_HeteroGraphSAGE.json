@@ -1,0 +1,145 @@
+{
+  "scenario": "LODO2",
+  "model": "HeteroGraphSAGE",
+  "source_domains": [
+    "elliptic",
+    "ieee"
+  ],
+  "target_domain": "dgraphfin",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.4945981248114574,
+      "PR-AUC": 0.060234924570146266,
+      "Precision": 0.054033251231527094,
+      "Recall": 0.022632020117351215,
+      "F1": 0.03190184049079755,
+      "selected_threshold": 0.2514364719390869,
+      "ECE": 0.12503960946393014,
+      "Brier": 0.07500164210796356,
+      "TP": 351,
+      "TN": 228346,
+      "FP": 6145,
+      "FN": 15158
+    },
+    {
+      "ROC-AUC": 0.5809810657896128,
+      "PR-AUC": 0.07984508797358542,
+      "Precision": 0.07740585774058577,
+      "Recall": 0.002385711522341866,
+      "F1": 0.004628760868205417,
+      "selected_threshold": 0.2414235770702362,
+      "ECE": 0.09433859038093687,
+      "Brier": 0.06708263605833054,
+      "TP": 37,
+      "TN": 234050,
+      "FP": 441,
+      "FN": 15472
+    },
+    {
+      "ROC-AUC": 0.5003040577005023,
+      "PR-AUC": 0.06119524560981042,
+      "Precision": 0.062410895175208224,
+      "Recall": 0.8580824037655554,
+      "F1": 0.1163586764069406,
+      "selected_threshold": 0.23508812487125397,
+      "ECE": 0.207324083394289,
+      "Brier": 0.10280032455921173,
+      "TP": 13308,
+      "TN": 34567,
+      "FP": 199924,
+      "FN": 2201
+    },
+    {
+      "ROC-AUC": 0.5981158202532945,
+      "PR-AUC": 0.07997623989316197,
+      "Precision": 0.08387096774193549,
+      "Recall": 0.08633696563285834,
+      "F1": 0.08508610281502192,
+      "selected_threshold": 0.27557453513145447,
+      "ECE": 0.1490042921569347,
+      "Brier": 0.08059379458427429,
+      "TP": 1339,
+      "TN": 219865,
+      "FP": 14626,
+      "FN": 14170
+    },
+    {
+      "ROC-AUC": 0.605412140232474,
+      "PR-AUC": 0.08707824165030671,
+      "Precision": 0.08423536192208635,
+      "Recall": 0.6031336643239409,
+      "F1": 0.14782505629963258,
+      "selected_threshold": 0.26202353835105896,
+      "ECE": 0.19309017651945354,
+      "Brier": 0.09556354582309723,
+      "TP": 9354,
+      "TN": 132799,
+      "FP": 101692,
+      "FN": 6155
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.5558822417574683,
+      "std": 0.04839734392758836
+    },
+    "PR-AUC": {
+      "mean": 0.07366594793940215,
+      "std": 0.01089772438658718
+    },
+    "Precision": {
+      "mean": 0.07239126676226859,
+      "std": 0.01211475793121721
+    },
+    "Recall": {
+      "mean": 0.31451415307240954,
+      "std": 0.3502718481029761
+    },
+    "F1": {
+      "mean": 0.07716008737611961,
+      "std": 0.052729481643263645
+    },
+    "selected_threshold": {
+      "mean": 0.2531092494726181,
+      "std": 0.014479417543615362
+    },
+    "ECE": {
+      "mean": 0.15375935038310887,
+      "std": 0.04193889679894111
+    },
+    "Brier": {
+      "mean": 0.08420838862657547,
+      "std": 0.013158423532158637
+    },
+    "TP": {
+      "mean": 4877.8,
+      "std": 5432.366092229057
+    },
+    "TN": {
+      "mean": 169925.4,
+      "std": 77096.25218543375
+    },
+    "FP": {
+      "mean": 64565.6,
+      "std": 77096.25218543375
+    },
+    "FN": {
+      "mean": 10631.2,
+      "std": 5432.366092229057
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO2_HeteroGraphSAGE_seed42.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO2_HeteroGraphSAGE_seed123.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO2_HeteroGraphSAGE_seed3407.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO2_HeteroGraphSAGE_seed2025.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO2_HeteroGraphSAGE_seed9999.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "FULL_PAPER_RUN"
+}

@@ -1,0 +1,58 @@
+{
+  "scenario": "LODO0",
+  "model": "DG-Hetero-GNN",
+  "seed": 2025,
+  "configuration": {
+    "run_mode": "FULL_PAPER_RUN",
+    "epochs": 40,
+    "smoke_epochs": 2,
+    "smoke_nodes": 512,
+    "hidden": 48,
+    "dropout": 0.15,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0,
+    "focal_alpha": 0.25,
+    "focal_gamma": 2.0,
+    "domain_weight": 0.1,
+    "grl_strength": 1.0,
+    "validation_fraction": 0.2,
+    "ece_bins": 10,
+    "seeds": [
+      42,
+      123,
+      3407,
+      2025,
+      9999
+    ]
+  },
+  "threshold_provenance": {
+    "validation": "pooled source validation labels/probabilities",
+    "adaptive": false,
+    "domain_generalization": true,
+    "local_domain_ids": {
+      "ieee": 0,
+      "dgraphfin": 1
+    }
+  },
+  "metrics": {
+    "ROC-AUC": 0.4344712359810198,
+    "PR-AUC": 0.07970313478923884,
+    "Precision": 0.010754753216823508,
+    "Recall": 0.012321232123212322,
+    "F1": 0.011484823625922888,
+    "selected_threshold": 0.158517524600029,
+    "ECE": 0.028870169164547446,
+    "Brier": 0.09008532017469406,
+    "TP": 56,
+    "TN": 36868,
+    "FP": 5151,
+    "FN": 4489
+  },
+  "prediction_artifact": "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO0_DG-Hetero-GNN_seed2025.npz",
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  }
+}

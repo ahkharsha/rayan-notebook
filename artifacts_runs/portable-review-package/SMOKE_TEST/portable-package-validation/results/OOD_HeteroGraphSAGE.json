@@ -1,0 +1,86 @@
+{
+  "scenario": "OOD",
+  "model": "HeteroGraphSAGE",
+  "source_domains": [
+    "elliptic",
+    "ieee",
+    "dgraphfin"
+  ],
+  "target_domain": "amlsim",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.734,
+      "PR-AUC": 0.7547616105268058,
+      "Precision": 0.6097560975609756,
+      "Recall": 1.0,
+      "F1": 0.7575757575757576,
+      "selected_threshold": 0.33628153800964355,
+      "ECE": 0.16886764301194088,
+      "Brier": 0.25572362542152405,
+      "TP": 25,
+      "TN": 4,
+      "FP": 16,
+      "FN": 0
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.734,
+      "std": 0.0
+    },
+    "PR-AUC": {
+      "mean": 0.7547616105268058,
+      "std": 0.0
+    },
+    "Precision": {
+      "mean": 0.6097560975609756,
+      "std": 0.0
+    },
+    "Recall": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "F1": {
+      "mean": 0.7575757575757576,
+      "std": 0.0
+    },
+    "selected_threshold": {
+      "mean": 0.33628153800964355,
+      "std": 0.0
+    },
+    "ECE": {
+      "mean": 0.16886764301194088,
+      "std": 0.0
+    },
+    "Brier": {
+      "mean": 0.25572362542152405,
+      "std": 0.0
+    },
+    "TP": {
+      "mean": 25.0,
+      "std": 0.0
+    },
+    "TN": {
+      "mean": 4.0,
+      "std": 0.0
+    },
+    "FP": {
+      "mean": 16.0,
+      "std": 0.0
+    },
+    "FN": {
+      "mean": 0.0,
+      "std": 0.0
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\DG_Hetero_GNN_Review_Package\\artifacts_runs\\portable-review-package\\SMOKE_TEST\\portable-package-validation\\predictions\\OOD_HeteroGraphSAGE_seed42.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "SMOKE_TEST"
+}

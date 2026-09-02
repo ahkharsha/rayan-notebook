@@ -1,0 +1,85 @@
+{
+  "scenario": "LODO0",
+  "model": "GraphSAGE",
+  "source_domains": [
+    "ieee",
+    "dgraphfin"
+  ],
+  "target_domain": "elliptic",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.54949951171875,
+      "PR-AUC": 0.48598408608276594,
+      "Precision": 0.4945652173913043,
+      "Recall": 0.35546875,
+      "F1": 0.41363636363636364,
+      "selected_threshold": 0.40050968527793884,
+      "ECE": 0.1336203039827524,
+      "Brier": 0.2631082236766815,
+      "TP": 91,
+      "TN": 163,
+      "FP": 93,
+      "FN": 165
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.54949951171875,
+      "std": 0.0
+    },
+    "PR-AUC": {
+      "mean": 0.48598408608276594,
+      "std": 0.0
+    },
+    "Precision": {
+      "mean": 0.4945652173913043,
+      "std": 0.0
+    },
+    "Recall": {
+      "mean": 0.35546875,
+      "std": 0.0
+    },
+    "F1": {
+      "mean": 0.41363636363636364,
+      "std": 0.0
+    },
+    "selected_threshold": {
+      "mean": 0.40050968527793884,
+      "std": 0.0
+    },
+    "ECE": {
+      "mean": 0.1336203039827524,
+      "std": 0.0
+    },
+    "Brier": {
+      "mean": 0.2631082236766815,
+      "std": 0.0
+    },
+    "TP": {
+      "mean": 91.0,
+      "std": 0.0
+    },
+    "TN": {
+      "mean": 163.0,
+      "std": 0.0
+    },
+    "FP": {
+      "mean": 93.0,
+      "std": 0.0
+    },
+    "FN": {
+      "mean": 165.0,
+      "std": 0.0
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\DG_Hetero_GNN_Review_Package\\artifacts_runs\\portable-review-package\\SMOKE_TEST\\portable-package-validation\\predictions\\LODO0_GraphSAGE_seed42.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "SMOKE_TEST"
+}

@@ -1,0 +1,53 @@
+{
+  "scenario": "LODO2",
+  "model": "HeteroGraphSAGE",
+  "seed": 2025,
+  "configuration": {
+    "run_mode": "FULL_PAPER_RUN",
+    "epochs": 40,
+    "smoke_epochs": 2,
+    "smoke_nodes": 512,
+    "hidden": 48,
+    "dropout": 0.15,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0,
+    "focal_alpha": 0.25,
+    "focal_gamma": 2.0,
+    "domain_weight": 0.1,
+    "grl_strength": 1.0,
+    "validation_fraction": 0.2,
+    "ece_bins": 10,
+    "seeds": [
+      42,
+      123,
+      3407,
+      2025,
+      9999
+    ]
+  },
+  "threshold_provenance": {
+    "validation": "pooled source validation labels/probabilities",
+    "domain_generalization": false
+  },
+  "metrics": {
+    "ROC-AUC": 0.5981158202532945,
+    "PR-AUC": 0.07997623989316197,
+    "Precision": 0.08387096774193549,
+    "Recall": 0.08633696563285834,
+    "F1": 0.08508610281502192,
+    "selected_threshold": 0.27557453513145447,
+    "ECE": 0.1490042921569347,
+    "Brier": 0.08059379458427429,
+    "TP": 1339,
+    "TN": 219865,
+    "FP": 14626,
+    "FN": 14170
+  },
+  "prediction_artifact": "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\LODO2_HeteroGraphSAGE_seed2025.npz",
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  }
+}

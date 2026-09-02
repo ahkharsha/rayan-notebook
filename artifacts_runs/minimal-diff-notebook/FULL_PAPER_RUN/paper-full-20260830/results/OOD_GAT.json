@@ -1,0 +1,146 @@
+{
+  "scenario": "OOD",
+  "model": "GAT",
+  "source_domains": [
+    "elliptic",
+    "ieee",
+    "dgraphfin"
+  ],
+  "target_domain": "amlsim",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.29200000000000004,
+      "PR-AUC": 0.4738313839261658,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.19337476789951324,
+      "ECE": 0.10735735628339982,
+      "Brier": 0.2619958817958832,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.25,
+      "PR-AUC": 0.4278187847784832,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.32409125566482544,
+      "ECE": 0.10678625437948441,
+      "Brier": 0.26193004846572876,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.414,
+      "PR-AUC": 0.5288380424282969,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.12796959280967712,
+      "ECE": 0.11604467365476823,
+      "Brier": 0.26141297817230225,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.40800000000000003,
+      "PR-AUC": 0.6144069283009523,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.34173840284347534,
+      "ECE": 0.12784570786688065,
+      "Brier": 0.26470378041267395,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.356,
+      "PR-AUC": 0.4660846101639222,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.18713684380054474,
+      "ECE": 0.1766189124849108,
+      "Brier": 0.26873093843460083,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.344,
+      "std": 0.0643117407632541
+    },
+    "PR-AUC": {
+      "mean": 0.5021959499195641,
+      "std": 0.06471730049981554
+    },
+    "Precision": {
+      "mean": 0.5555555555555556,
+      "std": 0.0
+    },
+    "Recall": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "F1": {
+      "mean": 0.7142857142857143,
+      "std": 0.0
+    },
+    "selected_threshold": {
+      "mean": 0.23486217260360717,
+      "std": 0.08343775311892632
+    },
+    "ECE": {
+      "mean": 0.1269305809338888,
+      "std": 0.025989135200950322
+    },
+    "Brier": {
+      "mean": 0.2637547254562378,
+      "std": 0.002741173412954642
+    },
+    "TP": {
+      "mean": 25.0,
+      "std": 0.0
+    },
+    "TN": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "FP": {
+      "mean": 20.0,
+      "std": 0.0
+    },
+    "FN": {
+      "mean": 0.0,
+      "std": 0.0
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_GAT_seed42.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_GAT_seed123.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_GAT_seed3407.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_GAT_seed2025.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_GAT_seed9999.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "FULL_PAPER_RUN"
+}

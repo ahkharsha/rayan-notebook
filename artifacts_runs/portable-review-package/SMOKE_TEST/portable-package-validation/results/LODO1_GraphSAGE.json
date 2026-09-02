@@ -1,0 +1,85 @@
+{
+  "scenario": "LODO1",
+  "model": "GraphSAGE",
+  "source_domains": [
+    "elliptic",
+    "dgraphfin"
+  ],
+  "target_domain": "ieee",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.41064453125,
+      "PR-AUC": 0.4420051123291593,
+      "Precision": 0.49902152641878667,
+      "Recall": 0.99609375,
+      "F1": 0.6649282920469362,
+      "selected_threshold": 0.3829512894153595,
+      "ECE": 0.04671099828556181,
+      "Brier": 0.25441429018974304,
+      "TP": 255,
+      "TN": 0,
+      "FP": 256,
+      "FN": 1
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.41064453125,
+      "std": 0.0
+    },
+    "PR-AUC": {
+      "mean": 0.4420051123291593,
+      "std": 0.0
+    },
+    "Precision": {
+      "mean": 0.49902152641878667,
+      "std": 0.0
+    },
+    "Recall": {
+      "mean": 0.99609375,
+      "std": 0.0
+    },
+    "F1": {
+      "mean": 0.6649282920469362,
+      "std": 0.0
+    },
+    "selected_threshold": {
+      "mean": 0.3829512894153595,
+      "std": 0.0
+    },
+    "ECE": {
+      "mean": 0.04671099828556181,
+      "std": 0.0
+    },
+    "Brier": {
+      "mean": 0.25441429018974304,
+      "std": 0.0
+    },
+    "TP": {
+      "mean": 255.0,
+      "std": 0.0
+    },
+    "TN": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "FP": {
+      "mean": 256.0,
+      "std": 0.0
+    },
+    "FN": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\DG_Hetero_GNN_Review_Package\\artifacts_runs\\portable-review-package\\SMOKE_TEST\\portable-package-validation\\predictions\\LODO1_GraphSAGE_seed42.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "SMOKE_TEST"
+}

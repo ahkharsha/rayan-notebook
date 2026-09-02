@@ -1,0 +1,30 @@
+[
+  {
+    "Dataset": "elliptic",
+    "Transaction nodes": 46564,
+    "Entity nodes": 93128,
+    "Feature size": 128,
+    "Total edges": 222880
+  },
+  {
+    "Dataset": "ieee",
+    "Transaction nodes": 590540,
+    "Entity nodes": 14962,
+    "Feature size": 128,
+    "Total edges": 2952700
+  },
+  {
+    "Dataset": "dgraphfin",
+    "Transaction nodes": 250000,
+    "Entity nodes": 324822,
+    "Feature size": 128,
+    "Total edges": 1036164
+  },
+  {
+    "Dataset": "amlsim",
+    "Transaction nodes": 45,
+    "Entity nodes": 35,
+    "Feature size": 128,
+    "Total edges": 443
+  }
+]

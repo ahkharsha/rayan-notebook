@@ -1,0 +1,146 @@
+{
+  "scenario": "OOD",
+  "model": "GCN",
+  "source_domains": [
+    "elliptic",
+    "ieee",
+    "dgraphfin"
+  ],
+  "target_domain": "amlsim",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.524,
+      "PR-AUC": 0.5802669957143088,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.20744231343269348,
+      "ECE": 0.12999242875311112,
+      "Brier": 0.26330921053886414,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.466,
+      "PR-AUC": 0.5418545376401377,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.15425258874893188,
+      "ECE": 0.11313642793231544,
+      "Brier": 0.252074658870697,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.456,
+      "PR-AUC": 0.5467493972258047,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.39868471026420593,
+      "ECE": 0.10380944940778947,
+      "Brier": 0.2577822506427765,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.546,
+      "PR-AUC": 0.654127219495729,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.19352979958057404,
+      "ECE": 0.116664770576689,
+      "Brier": 0.25998228788375854,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    },
+    {
+      "ROC-AUC": 0.612,
+      "PR-AUC": 0.6333970932351238,
+      "Precision": 0.5555555555555556,
+      "Recall": 1.0,
+      "F1": 0.7142857142857143,
+      "selected_threshold": 0.12095572054386139,
+      "ECE": 0.1286465856764052,
+      "Brier": 0.261560320854187,
+      "TP": 25,
+      "TN": 0,
+      "FP": 20,
+      "FN": 0
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.5208,
+      "std": 0.05685912415786932
+    },
+    "PR-AUC": {
+      "mean": 0.5912790486622208,
+      "std": 0.04532275303357294
+    },
+    "Precision": {
+      "mean": 0.5555555555555556,
+      "std": 0.0
+    },
+    "Recall": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "F1": {
+      "mean": 0.7142857142857143,
+      "std": 0.0
+    },
+    "selected_threshold": {
+      "mean": 0.21497302651405334,
+      "std": 0.09673958006052251
+    },
+    "ECE": {
+      "mean": 0.11844993246926205,
+      "std": 0.009828172106852067
+    },
+    "Brier": {
+      "mean": 0.2589417457580566,
+      "std": 0.0038862764518735214
+    },
+    "TP": {
+      "mean": 25.0,
+      "std": 0.0
+    },
+    "TN": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "FP": {
+      "mean": 20.0,
+      "std": 0.0
+    },
+    "FN": {
+      "mean": 0.0,
+      "std": 0.0
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_GCN_seed42.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_GCN_seed123.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_GCN_seed3407.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_GCN_seed2025.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_GCN_seed9999.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "FULL_PAPER_RUN"
+}

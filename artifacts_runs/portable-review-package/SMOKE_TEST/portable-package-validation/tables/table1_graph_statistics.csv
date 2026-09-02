@@ -1,0 +1,5 @@
+Dataset,Transaction nodes,Entity nodes,Feature size,Total edges
+elliptic,46564,93128,128,222880
+ieee,590540,14962,128,2952700
+dgraphfin,250000,324822,128,1036164
+amlsim,45,35,128,443

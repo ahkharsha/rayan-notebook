@@ -1,0 +1,146 @@
+{
+  "scenario": "OOD",
+  "model": "HeteroGraphSAGE",
+  "source_domains": [
+    "elliptic",
+    "ieee",
+    "dgraphfin"
+  ],
+  "target_domain": "amlsim",
+  "per_seed": [
+    {
+      "ROC-AUC": 0.6699999999999999,
+      "PR-AUC": 0.6847591033011304,
+      "Precision": 0.75,
+      "Recall": 0.12,
+      "F1": 0.20689655172413793,
+      "selected_threshold": 0.22378191351890564,
+      "ECE": 0.40452754977676597,
+      "Brier": 0.39035293459892273,
+      "TP": 3,
+      "TN": 19,
+      "FP": 1,
+      "FN": 22
+    },
+    {
+      "ROC-AUC": 0.31,
+      "PR-AUC": 0.47361725124825915,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "selected_threshold": 0.23485568165779114,
+      "ECE": 0.3893442524804009,
+      "Brier": 0.40512335300445557,
+      "TP": 0,
+      "TN": 20,
+      "FP": 0,
+      "FN": 25
+    },
+    {
+      "ROC-AUC": 0.598,
+      "PR-AUC": 0.7073205286565295,
+      "Precision": 0.8333333333333334,
+      "Recall": 0.2,
+      "F1": 0.3225806451612903,
+      "selected_threshold": 0.22585143148899078,
+      "ECE": 0.3725112895170848,
+      "Brier": 0.377840518951416,
+      "TP": 5,
+      "TN": 19,
+      "FP": 1,
+      "FN": 20
+    },
+    {
+      "ROC-AUC": 0.47,
+      "PR-AUC": 0.5460751363749484,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "selected_threshold": 0.25665345788002014,
+      "ECE": 0.37953652110364705,
+      "Brier": 0.3961440920829773,
+      "TP": 0,
+      "TN": 20,
+      "FP": 0,
+      "FN": 25
+    },
+    {
+      "ROC-AUC": 0.47200000000000003,
+      "PR-AUC": 0.6113241152319504,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "selected_threshold": 0.26579001545906067,
+      "ECE": 0.3766663932138019,
+      "Brier": 0.3902779817581177,
+      "TP": 0,
+      "TN": 20,
+      "FP": 0,
+      "FN": 25
+    }
+  ],
+  "aggregate": {
+    "ROC-AUC": {
+      "mean": 0.504,
+      "std": 0.12345687506169915
+    },
+    "PR-AUC": {
+      "mean": 0.6046192269625635,
+      "std": 0.08672236258276507
+    },
+    "Precision": {
+      "mean": 0.3166666666666667,
+      "std": 0.38873012632302
+    },
+    "Recall": {
+      "mean": 0.064,
+      "std": 0.082365041127896
+    },
+    "F1": {
+      "mean": 0.10589543937708565,
+      "std": 0.1347555084912547
+    },
+    "selected_threshold": {
+      "mean": 0.24138650000095369,
+      "std": 0.016867264014664228
+    },
+    "ECE": {
+      "mean": 0.3845172012183401,
+      "std": 0.01143939465027427
+    },
+    "Brier": {
+      "mean": 0.39194777607917786,
+      "std": 0.00889439521730655
+    },
+    "TP": {
+      "mean": 1.6,
+      "std": 2.0591260281974
+    },
+    "TN": {
+      "mean": 19.6,
+      "std": 0.4898979485566356
+    },
+    "FP": {
+      "mean": 0.4,
+      "std": 0.48989794855663565
+    },
+    "FN": {
+      "mean": 23.4,
+      "std": 2.0591260281974
+    }
+  },
+  "prediction_artifacts": [
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_HeteroGraphSAGE_seed42.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_HeteroGraphSAGE_seed123.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_HeteroGraphSAGE_seed3407.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_HeteroGraphSAGE_seed2025.npz",
+    "D:\\Rayan Paper materials\\artifacts_runs\\minimal-diff-notebook\\FULL_PAPER_RUN\\paper-full-20260830\\predictions\\OOD_HeteroGraphSAGE_seed9999.npz"
+  ],
+  "dataset_hashes": {
+    "elliptic": "0a86c749a1c388be50ca2a828485532216dd1cf29f39e9a5a69159c66514ee29",
+    "ieee": "e73460dffa01a807cdf113a768c535f8d21d9bf6a94e041ca863449d220bf761",
+    "dgraphfin": "c7726f1dfd085e548ac86ad1cae62d751c87df95248260499ab431b9bfbb9e21",
+    "amlsim": "99dd1eb32ad2a71fd6eb95eaa942951599f88418c1fafe884957a143491acb1e"
+  },
+  "run_mode": "FULL_PAPER_RUN"
+}
